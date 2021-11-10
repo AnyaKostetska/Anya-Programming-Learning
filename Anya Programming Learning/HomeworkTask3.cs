@@ -14,7 +14,7 @@ namespace Anya_Programming_Learning
             {
                 result = A * B;
             }
-            else if (A < B)
+            else 
             {
                 result = A - B;
             }
@@ -23,30 +23,34 @@ namespace Anya_Programming_Learning
         public static int Task2(int X, int Y)
         {
             int result;
-            if (X > 0 & Y > 0)
+            if (X > 0 && Y > 0)
             {
                 result = 1;
             }
-            else if (X < 0 & Y > 0)
+            else if (X < 0 && Y > 0)
             {
                 result = 2;
             }
-            else if (X < 0 & Y < 0)
+            else if (X < 0 && Y < 0)
             {
                 result = 3;
             }
-            else if (X > 0 & Y < 0)
+            else if (X > 0 && Y < 0)
             {
                 result = 4;
             }
+            else
+            {
+                result = 0;
+            }
             return result;
-
+        }
             //public static int Task3()
             //{
             //TO BE EDITED
             //}
-            static (double X1, double X2) Task4(double a, double b, double c)
-            {//null
+          public static (double? X1, double? X2) Task4(double a, double b, double c)
+            {
                double d = b * b - 4 * a * c;
                 if (d == 0)//one root
                 {
@@ -69,4 +73,3 @@ namespace Anya_Programming_Learning
             //TASK 5 TO BE EDITED
         }
     }
-}
